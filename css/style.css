@@ -24,16 +24,14 @@ ul{
     display: flex;
     align-items: center;
 }
-.link-nav a{
-    padding: 0.8rem;
-    color: #000;
+.link-nav li a{
     opacity: 0.8;
+    color: #000;
 }
-li a.ativo{
-    font-weight: 900;
-    opacity: 1;
+.link-nav li{
+    padding: 0.8rem;
 }
-li a:hover:not(.ativo) {
+.link-nav li:hover {
     background-color: #F6F6F6;
     color: black;
     opacity: 1;
