@@ -47,12 +47,46 @@ p.uppercase{
     padding-top: 3rem;
     opacity: 0.7;
 }
-.galeria-grid{
+section{
+    padding: 5rem 0;
+}
+.container-grid{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem 1rem;
+}
+.container-grid div{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
-.galeria-grid img{
-    width: 22%;
-    padding: 3rem 0.5rem;
+.galeria-grid-img img{
+    width: 100%;
 }
+footer{
+    background-color: #F6F6F6;
+    padding: 2rem 0;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+}
+.fab{
+    font-size: 2em;
+    color: #000;
+    padding-left: 1.5rem;
+}
+.container-copyright{
+    display: flex;
+    align-items: center;
+}
+p.copyright-texto{
+    font-weight: 800;
+    /*padding: 0 1rem 0 6rem;*/
+}
+.layout-referencia p{
+    font-size: 0.6rem;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
