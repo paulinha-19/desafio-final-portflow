@@ -10,7 +10,12 @@
 nav{
     display: flex;
     justify-content: space-around;
-    padding: 3rem 0;  
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #fff;
 }
 nav h3{
     font-size: 2rem;
@@ -20,9 +25,18 @@ ul{
     align-items: center;
 }
 .link-nav a{
-    padding: 0 1rem;
+    padding: 0.8rem;
     color: #000;
-    opacity: 0.7;
+    opacity: 0.8;
+}
+li a.ativo{
+    font-weight: 900;
+    opacity: 1;
+}
+li a:hover:not(.ativo) {
+    background-color: #F6F6F6;
+    color: black;
+    opacity: 1;
 }
 header{
     display: flex;
@@ -70,6 +84,7 @@ footer{
 .footer-container{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 .fab{
     font-size: 2em;
@@ -78,11 +93,15 @@ footer{
 }
 .container-copyright{
     display: flex;
-    align-items: center;
 }
 p.copyright-texto{
     font-weight: 800;
+    padding-right: 1rem;
     /*padding: 0 1rem 0 6rem;*/
+}
+.layout-referencia{
+    display: flex;
+    flex-direction: column;
 }
 .layout-referencia p{
     font-size: 0.6rem;
