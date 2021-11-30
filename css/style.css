@@ -30,11 +30,11 @@ ul{
 }
 .link-nav li{
     padding: 0.8rem;
-}
-.link-nav li:hover {
-    background-color: #F6F6F6;
-    color: black;
     opacity: 1;
+}
+.link-nav li:hover{
+    background-color: #F6F6F6;
+    font-weight: bold;
 }
 header{
     display: flex;

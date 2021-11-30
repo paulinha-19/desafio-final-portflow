@@ -1,4 +1,5 @@
-$('.link-nav').on('click', 'li', function () {
-    $('.link-nav li.active').removeClass('active');
+$('li a').click(function(e) {
+    e.preventDefault();
+    $('li a.active').removeClass('active');
     $(this).addClass('active');
-})
+});
