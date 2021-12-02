@@ -16,6 +16,13 @@ nav{
     padding: 1.5rem 0;
     margin: 0 auto;
 }
+#mainbox,
+i.closebtn{
+    display: none;
+}
+#mainbox button{
+    border: none;
+}
 nav h3{
     font-size: 2rem;
 }
@@ -56,7 +63,6 @@ p.uppercase{
     font-size: 1.2rem;
     font-weight: 300;
     padding-top: 3rem;
-
 }
 section{
     padding: 5rem 0;
@@ -116,21 +122,52 @@ p.copyright-texto{
     opacity: 0.5;
 }
 
-
 /* media */
 @media screen and (max-width: 970px) {
-    .container-grid{
-        display: grid; 
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 1rem 1rem;
-        margin: 0 auto;
-    }
-    .footer-container{
-        display: flex;
-        flex-direction: column;
-    }
-   .footer-container ul{
-       padding: 2rem 0;
-   }
+#mainbox{
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s;
+    display: block;
 }
+.sidemenu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 999999;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s;
+}
+.sidemenu ul li a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.sidemenu i.closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+}
+.container-grid{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem 1rem;
+    margin: 0 auto;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer-container ul{
+    padding: 2rem 0;
+}
+}       
