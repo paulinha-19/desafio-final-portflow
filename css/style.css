@@ -121,13 +121,7 @@ p.copyright-texto{
 }
 
 /* media */
-@media screen and (max-width: 970px) {
-/* #mainbox{
-    font-size: 24px;
-    cursor: pointer;
-    transition: all .6s;
-    display: block;
-} */
+@media screen and (min-width: 600px) and (max-width: 900px) {
 nav{
     display: flex;
     justify-content: start;
@@ -171,4 +165,80 @@ nav h3{
 .footer-container ul{
     padding: 2rem 0;
 }
-}       
+}
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    nav{
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        gap:2rem;
+    }
+    nav h3{
+        font-size: 1.2rem;
+    }
+    .menu{
+        display: none;
+    }
+    .hamburguer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #000;
+        width: 110px;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .container-grid{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem 1rem;
+        margin: 0 auto;
+    }
+    .texto-header p{
+        font-size: 1.5rem;
+    }
+    .texto-header .uppercase{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    nav{
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        gap:2rem;
+    }
+    nav h3{
+        font-size: 1rem;
+    }
+    .menu{
+        display: none;
+    }
+    .hamburguer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #000;
+        width: 110px;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .container-grid{
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem 1rem;
+        margin: 0 auto;
+    }
+    .texto-header p{
+        font-size: 1rem;
+    }
+    .texto-header .uppercase{
+        font-size: 0.5rem;
+    }
+}
