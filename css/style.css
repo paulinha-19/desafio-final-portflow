@@ -204,7 +204,7 @@ nav h3{
         font-size: 0.8rem;
     }
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
     nav{
         display: flex;
         justify-content: start;
