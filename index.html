@@ -14,19 +14,21 @@
 
 <body>
     <nav>
-        <div id="mainbox" class="menu-open" onclick="openFunction()">
-            <button><i class="fas fa-bars"></i></button>
-        </div>
+        <button aria-label="Abrir Menu" class="hamburguer" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
         <h3>Portflow</h3>
-        <div id="menu" class="sidemenu">
-            <ul class="link-nav">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="https://github.com/paulinha-19" target="_blank">Blog</a></li>
-                <li><a href="https://www.vainaweb.com.br/blog" target="_blank">Valores</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <div role="menu">
+            <ul class="link-nav menu">
+                <li><a class="menuItem" href="index.html">Home</a></li>
+                <li><a class="menuItem" href="https://github.com/paulinha-19" target="_blank">Blog</a></li>
+                <li><a class="menuItem" href="https://www.vainaweb.com.br/blog" target="_blank">Valores</a></li>
+                <li><a class="menuItem" href="#portfolio">Portfólio</a></li>
+                <li><a class="menuItem" href="#contato">Contato</a></li>
+                <button  aria-label="Fechar Menu" class="close" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-close"></i>
+                </button>
             </ul>
-            <i class="fas fa-times closebtn" onclick="closeFunction()"></i>
         </div>
     </nav>
     <header>
