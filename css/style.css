@@ -231,6 +231,7 @@ p.copyright-texto {
     nav {
         display: flex;
         justify-content: start;
+        align-items: center;
         padding: 0;
         gap: 2rem;
     }
@@ -245,6 +246,7 @@ p.copyright-texto {
         border: none;
         background-color: #000;
         width: 110px;
+        padding: 0.5rem;
         color: #fff;
         font-size: 1.2rem;
         cursor: pointer;
@@ -265,12 +267,16 @@ p.copyright-texto {
     .texto-header .uppercase {
         font-size: 0.8rem;
     }
+    .img-laranjas, .texto-header{
+        display: none;
+    }
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+/* @media screen and (min-width: 320px) and (max-width: 479px) {
     nav {
         display: flex;
         justify-content: start;
+        align-items: center;
         padding: 0;
         gap: 2rem;
     }
@@ -285,6 +291,7 @@ p.copyright-texto {
         border: none;
         background-color: #000;
         width: 110px;
+        padding: 0.5rem;
         color: #fff;
         font-size: 1.2rem;
         cursor: pointer;
@@ -305,4 +312,4 @@ p.copyright-texto {
     .texto-header .uppercase {
         font-size: 0.5rem;
     }
-}
+} */
