@@ -275,21 +275,22 @@ nav h3{
     display: flex;
     flex-direction: column;
 }
-.footer-container ul{
-    padding: 2rem 0;
-}
 .footer-container ul li{
     font-size: 0.8rem;
+}
+ul.icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7FDBD4;
+    height: 50px;
+    padding-right: 1rem;
 }
 .container-copyright{
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 p.copyright-texto{
-    padding: 0.8rem 0;  
-}
-.layout-referencia p{
-    text-align: center;
+    padding-top: 1rem;
 }
 }
