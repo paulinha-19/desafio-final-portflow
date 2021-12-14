@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;800&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,166 +8,260 @@
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
-.max-widht{
+.max-widht {
     max-width: 1366px;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     padding: 1.5rem 0;
     margin: 0 auto;
 }
-.hamburguer,
-.close{
+.img-mobile{
     display: none;
 }
-nav h3{
+.hamburguer,
+li.closebtn-none{
+    display: none;
+}
+nav h3 {
     font-size: 2rem;
 }
-ul{
+ul {
     display: flex;
     align-items: center;
 }
-.link-nav li a{
+.link-nav li a {
     color: #000;
     display: block;
 }
-.link-nav li{
+.link-nav li {
     padding: 0.8rem;
     opacity: 1;
 }
-.link-nav li:hover{
+
+.link-nav li:hover {
     background-color: #F6F6F6;
     font-weight: bold;
 }
-header{
+header {
     display: flex;
     align-items: center;
 }
-.img-laranjas img{
+.img-laranjas{
     width: 100%;
-    position: relative;
+    background-image: url('../img/laranja-azul-recorte.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
 }
-.texto-header{
+.texto-header {
     position: absolute;
     color: #fff;
     padding-left: 5%;
 }
-.texto-header p{
+.texto-header p {
     font-size: 3rem;
     font-weight: 800;
 }
-p.uppercase{
+p.uppercase {
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     padding-top: 3rem;
 }
-section{
+section {
     padding: 5rem 0;
 }
-.container-grid{
-    display: grid; 
+.container-grid {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem 1rem;
     margin: 0 auto;
 }
-.container-grid div{
+.container-grid div {
     display: flex;
     justify-content: center;
 }
-.galeria-grid-img img{
+.galeria-grid-img img {
     width: 100%;
     background: #fff;
     -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;    
+    transform: scale(1);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
-.galeria-grid-img:hover img{
+.galeria-grid-img:hover img {
     -webkit-transform: scale(0.8);
-	transform: scale(0.8);
+    transform: scale(0.8);
 }
-footer{
+footer {
     background-color: #F6F6F6;
     padding: 2rem 0;
 }
-.footer-container{
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.fab{
+.fab {
     font-size: 2em;
     color: #000;
     padding-left: 1.5rem;
 }
-.container-copyright{
+.container-copyright {
     display: flex;
 }
-p.copyright-texto{
+p.copyright-texto {
     font-weight: 800;
     padding-right: 1rem;
     /*padding: 0 1rem 0 6rem;*/
 }
-.layout-referencia{
+.layout-referencia {
     display: flex;
     flex-direction: column;
 }
-.layout-referencia p{
+.layout-referencia p {
     font-size: 0.6rem;
     font-weight: 700;
     opacity: 0.5;
 }
-
 /* media */
-@media screen and (min-width: 768px) and (max-width: 900px) {
-nav{
-    display: flex;
-    justify-content: start;
-    padding: 0;
-    gap:2rem;
+@media screen and (min-width: 768px) and (max-width: 980px) {
+    nav {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        gap: 2rem;
+    }
+    nav h3 {
+        font-size: 1.5rem;
+    }
+    .hamburguer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #000;
+        width: 110px;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover{
+        color: #fff;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .img-laranjas{
+        width: 100%;
+        background-image: url('../img/laranja-azul-recorte.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+    .texto-header p {
+        font-size: 2rem;
+    }
+    .texto-header .uppercase {
+        font-size: 1rem;
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem 1rem;
+        margin: 0 auto;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-container ul {
+        padding: 2rem 0;
+    }
 }
-nav h3{
-    font-size: 1.8rem;
+@media screen and (min-width: 675px) and (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        gap: 2rem;
+    }
+    nav h3 {
+        font-size: 1.2rem;
+    }
+    .link-nav{
+        display: none;
+    }
+    .img-laranjas{
+        background-image: url('../img/laranja-azul-recorte.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hamburguer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #000;
+        width: 110px;
+        padding: 0.5rem;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem 1rem;
+        margin: 0 auto;
+    }
+    .texto-header p {
+        font-size: 1.5rem;
+    }
+    .texto-header .uppercase {
+        font-size: 0.8rem;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .layout-referencia, .copyright-texto{
+        padding-top: 2rem;
+    }
 }
-.menu{
-    display: none;
-}
-.hamburguer{
-    display: flex;
-    justify-content: center;
-    align-items: center;           
-    border: none;
-    background-color: #000;
-    width: 130px;
-    color: #fff;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-.texto-header p{
-    font-size: 2rem;
-}
-.texto-header .uppercase{
-    font-size: 1rem;
-}
-.container-grid{
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem 1rem;
-    margin: 0 auto;
-}
-.footer-container{
-    display: flex;
-    flex-direction: column;
-}
-.footer-container ul{
-    padding: 2rem 0;
-}
-}
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 675px) {
     nav{
         display: flex;
         justify-content: start;
@@ -174,14 +269,24 @@ nav h3{
         gap:2rem;
     }
     nav h3{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
-    .menu{
+    .link-nav{
         display: none;
     }
-    .img-laranjas img{
-        width: 100%;
-        position: relative;
+    .img-laranjas{
+        background-image: url('../img/laranja-azul-mobile.png');
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 675px;
+        height: 550px;
+    }
+    .texto-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .galeria-grid-img img{
+        width: 60%;
     }
     .hamburguer{
         display: flex;
@@ -196,98 +301,45 @@ nav h3{
     }
     .container-grid{
         display: grid; 
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         gap: 1rem 1rem;
         margin: 0 auto;
     }
     .texto-header p{
-        font-size: 1.8rem;
+        font-size: 2rem;
+        width: 249px;
+    }
+    .texto-header{
+        padding: 15rem 0 0 2rem;
     }
     .texto-header .uppercase{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .footer-container{
         display: flex;
         flex-direction: column;
     }
-    .footer-container ul{
-        padding: 2rem 0;
+    .footer-container ul li{
+        font-size: 0.8rem;
     }
-}
-@media screen and (min-width: 320px) and (max-width: 601px){
-nav{
-    display: flex;
-    justify-content: start;
-    padding: 0;
-    gap:2rem;
-}
-nav h3{
-    font-size: 1.2rem;
-}
-.menu{
-    display: none;
-}
-.img-laranjas{ /* colocar aqui :not*/ 
-    display: none;
-}
-.img-mobile{ 
-    background-image: url('../img/laranja-azul-mobile.png');
-    background-size: cover;
-    /* position: relative; */
-    /* background-position:center; */
-    background-repeat: no-repeat;
-    height: 500px;
-    /* width: 100%; */
-}
-.texto-header{
-    text-align: center;
-    position: absolute;
-}
-.galeria-grid-img img{
-    width: 60%;
-}
-.hamburguer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: #000;
-    width: 110px;
-    color: #fff;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-.container-grid{
-    display: grid; 
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 1rem 1rem;
-    margin: 0 auto;
-}
-.texto-header p{
-    font-size: 1.5rem;
-}
-.texto-header .uppercase{
-    font-size: 0.9rem;
-}
-.footer-container{
-    display: flex;
-    flex-direction: column;
-}
-.footer-container ul li{
-    font-size: 0.8rem;
-}
-ul.icon-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #7FDBD4;
-    height: 50px;
-    padding-right: 1rem;
-}
-.container-copyright{
-  display: flex;
-  flex-direction: column;
-}
+    ul.icon-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7FDBD4;
+        height: 50px;
+        padding-right: 1rem;
+    }
+    .copyright-texto{
+        padding-top: 1.5rem;
+    }
+    .layout-referencia{
+        width: 300px;
+        height: 65px;
+    }
+    .container-copyright{
+      display: flex;
+      flex-direction: column;
+    }
 }

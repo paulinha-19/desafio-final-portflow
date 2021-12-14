@@ -9,32 +9,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portflow</title>
 </head>
 
 <body>
     <nav>
-        <button aria-label="Abrir Menu" class="hamburguer" aria-haspopup="true" aria-controls="menu"
-            aria-expanded="false">
-            <span><i class="fas fa-bars"></i></span>
+        <button aria-label="Abrir Nav" class="hamburguer" aria-haspopup="true" aria-controls="menu"
+            aria-expanded="false" onclick="openNav()">
+            <i class="fas fa-bars"></i>
         </button>
         <h3>Portflow</h3>
-        <div role="menu">
-            <ul class="link-nav menu">
-                <li><a class="menuItem" href="index.html">Home</a></li>
-                <li><a class="menuItem" href="https://github.com/paulinha-19" target="_blank">Blog</a></li>
-                <li><a class="menuItem" href="https://www.vainaweb.com.br/blog" target="_blank">Valores</a></li>
-                <li><a class="menuItem" href="#portfolio">Portfólio</a></li>
-                <li><a class="menuItem" href="#contato">Contato</a></li>
-                <button aria-label="Fechar Menu" class="close" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-close"></i>
-                </button>
+        <div id="mySidenav" class="sidenav">
+            <ul class="link-nav">
+                <li class="closebtn-none"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                            class="fas fa-times"></i></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://github.com/paulinha-19" target="_blank">Blog</a></li>
+                <li><a href="https://www.vainaweb.com.br/blog" target="_blank">Valores</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
     <header>
-        <div class="img-laranjas img-mobile">
-            <img src="./img/laranja azul recorte.png" alt="laranjas">
+        <div class="img-laranjas">
+            <!-- <img src="./img/laranja-azul-recorte.png" alt="laranjas">
+            <img class="img-mobile" alt="laranjas-mobile"> -->
         </div>
         <div class="texto-header max-widht">
             <p>Imagine, Discuta, Desenhe.</p>
@@ -53,7 +56,7 @@
                 <img class="galeria-grid-img" src="img/NoPath - Copia (21).png" alt="muance">
             </div>
             <div class="galeria-grid-img">
-                <img class="galeria-grid-img" src="img/mokup telas.png" alt="pc">
+                <img class="galeria-grid-img" src="img/mokup-telas.png" alt="pc">
             </div>
             <div class="galeria-grid-img">
                 <img src="img/NoPath - Copia (25).png" alt="cd" class="galeria-grid-img">
@@ -102,8 +105,9 @@
             </div>
         </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
+
 </html>
