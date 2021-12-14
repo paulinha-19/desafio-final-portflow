@@ -1,3 +1,3 @@
 # Desafio final Vai na Web
 
-## Foi desenvolvido layout de acordo com a ilustração no adobexd
+## Layout desenvolvido com base na ilustração no fornecida pelo vai na web.
