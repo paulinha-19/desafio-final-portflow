@@ -163,7 +163,7 @@ p.copyright-texto {
         transition: 0.5s;
         padding-top: 60px;
     }
-    .sidenav a {
+    .sidenav .link-nav li a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
@@ -174,7 +174,7 @@ p.copyright-texto {
     .sidenav a:hover{
         color: #fff;
     }
-    .sidenav .closebtn {
+    .link-nav li .closebtn {
         position: absolute;
         top: 0;
         right: 25px;
